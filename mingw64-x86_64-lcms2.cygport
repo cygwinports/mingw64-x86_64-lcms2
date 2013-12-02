@@ -1,0 +1,17 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-lcms2"
+VERSION=2.5
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Little CMS library for Win64 toolchain"
+DESCRIPTION="Little CMS intends to be a small-footprint color management engine,
+with special focus on accuracy and performance. It uses the International Color
+Consortium standard (ICC), which is the modern standard when regarding to color
+management."
+HOMEPAGE="http://www.littlecms.com/"
+SRC_URI="mirror://sourceforge/lcms/lcms2-${VERSION}.tar.gz"
+SRC_DIR="lcms2-${VERSION}"
+
+MAKEOPTS+=" bin_PROGRAMS= man_MANS= "
